@@ -88,9 +88,14 @@
     },
     "custom_category": [
         {
-          "name": "2025",
+          "name": "最新",
           "type": "movie",
-          "query": "2025"
+          "query": "最新"
+        },
+        {
+          "name": "最新",
+          "type": "tv",
+          "query": "最新"
         }
     ]    
 }
