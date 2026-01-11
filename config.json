@@ -19,6 +19,38 @@
             "api": "https://bfzyapi.com/api.php/provide/vod",
             "name": "暴风资源"
         },
+        "moduzy": {
+            "api": "https://www.mdzyapi.com/api.php/provide/vod",
+            "name": "魔都资源"
+        },
+        "ffzy": {
+            "api": "http://api.ffzyapi.com/api.php/provide/vod",
+            "name": "非凡资源"
+        },
+        "slzy": {
+            "api": "https://suoniapi.com/api.php/provide/vod",
+            "name": "索尼资源"
+        },
+        "hmer": {
+            "api": "https://json02.heimuer.xyz/api.php/provide/vod",
+            "name": "黑木耳资源"
+        },
+        "tpzy": {
+            "api": "https://taopianapi.com/cjapi/sda/vod",
+            "name": "淘片资源"
+        },
+        "zuid": {
+            "api": "https://api.zuidapi.com/api.php/provide/vod",
+            "name": "最大资源"
+        },
+        "nnzy": {
+            "api": "https://api.niuniuzy.me/api.php/provide/vod",
+            "name": "牛牛资源"
+        },
+        "lzi": {
+            "api": "https://cj.lziapi.com/api.php/provide/vod",
+            "name": "量子资源站"
+        },
         "tyyszy": {
             "api": "https://tyyszy.com/api.php/provide/vod",
             "name": "天涯资源"
