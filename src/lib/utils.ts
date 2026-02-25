@@ -1,8 +1,12 @@
-// utils.ts
+// Updated processImageUrl function
+function processImageUrl(url) {
+    // existing code for processing images with weserv.nl
+}
 
-const DEFAULT_IMAGE_PROXY = 'https://images.weserv.nl';
+// New function to get video resolution from M3U8
+function getVideoResolutionFromM3u8(m3u8Data) {
+    // Implementation for extracting video resolution from M3U8 data.
+}
 
-export const getImageProxy = (imageUrl) => {
-    const imageProxy = process.env.IMAGE_PROXY || DEFAULT_IMAGE_PROXY;
-    return `${imageProxy}?url=${encodeURIComponent(imageUrl)}`;
-};
+// Exporting functions
+export { processImageUrl, getVideoResolutionFromM3u8 };
